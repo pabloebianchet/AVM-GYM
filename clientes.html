@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Clientes</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <style>
+      /* Estilos para la tabla */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="contlogo">
+        <img src="./img/logoAdmin.png" alt="Logo" class="logo" />
+      </div>
+      <div class="contbtn">
+        <a href="formulario.html" class="btn btn-primary">Alta Cliente</a><br />
+        <a href="clientes.html" class="btn btn-primary">Consulta Cliente</a
+        ><br />
+        <a href="empleados.html" class="btn btn-primary">Empleados</a><br />
+        <a href="#" class="btn btn-primary">Botón 4</a><br />
+        <a href="#" class="btn btn-primary">Botón 5</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="mb-0">Consulta de Clientes</h3>
+          </div>
+          <div class="card-body">
+            <h2>Tabla de Usuarios</h2>
+            <table id="tabla-usuarios">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Los datos de los usuarios se insertarán aquí -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="clientes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Clientes</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="contlogo">
+        <img src="./img/logoAdmin.png" alt="Logo" class="logo" />
+      </div>
+      <div class="contbtn">
+        <a href="formulario.html" class="btn btn-primary">Alta Cliente</a><br />
+        <a href="clientes.html" class="btn btn-primary">Consulta Cliente</a
+        ><br />
+        <a href="empleados.html" class="btn btn-primary">Empleados</a><br />
+        <a href="#" class="btn btn-primary">Botón 4</a><br />
+        <a href="#" class="btn btn-primary">Botón 5</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="mb-0">Alta de Clientes</h3>
+          </div>
+          <div class="card-body">
+            <form action="http://localhost:3000/guardar_cliente" method="post">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ingrese el nombre del cliente"
+                />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Ingrese el apellido del cliente"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Ingrese el email del cliente"
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="Ingrese el teléfono del cliente"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Guardar Cliente
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
